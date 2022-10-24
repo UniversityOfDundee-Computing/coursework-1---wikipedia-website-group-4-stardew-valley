@@ -1,9 +1,9 @@
 @font-face {
-    font-family: Stardew Valley;
-    src: url("../css/StardewValley.otf");
+    font-family: "Stardew Valley";
+    src: url("../css/Stardew_Valley.otf") format('opentype');
   }
 
 #stardew {
     font-family: "Stardew Valley";
     font-size:small;
-}
+}   
