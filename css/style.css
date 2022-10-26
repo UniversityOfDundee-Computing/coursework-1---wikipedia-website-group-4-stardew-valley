@@ -12,3 +12,10 @@ body{
 .bg-title{
   background-color: #6b3710;
 }
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
