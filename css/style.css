@@ -1,9 +1,12 @@
-@font-face {
-    font-family: "Stardew Valley";
-    src: url("../css/Stardew_Valley.otf") format('opentype');
-  }
 
-#stardew {
-    font-family: "Stardew Valley";
-    font-size:small;
-}   
+
+.text-title{
+  color:#dda059
+}
+.text-title:hover{
+  color:#da7056
+}
+
+.bg-title{
+  background-color: #6b3710;
+}
