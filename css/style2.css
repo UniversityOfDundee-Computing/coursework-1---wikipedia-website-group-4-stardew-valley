@@ -7,9 +7,8 @@ body{
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-position: center;
+
     background-attachment: fixed;
-    height: 100vh;
-    width: 100%;
 }
 
 #nav-bar{
@@ -95,3 +94,5 @@ body{
         background-color:#9EFF9E; color:#202122;text-align:left;vertical-align:middle;
     }
     
+}
+
