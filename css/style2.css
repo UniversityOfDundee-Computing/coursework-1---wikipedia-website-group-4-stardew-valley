@@ -18,6 +18,7 @@ body{
     justify-content: center;
     margin: auto;
     margin-bottom: 1rem;
+    /* position:fixed; */
 }
 .headerImg-container img{
     width: 24%;
@@ -30,6 +31,7 @@ body{
     margin: auto;
     background-color: #dda059;
     border-radius: 20px;
+    position: sticky;
 }
 #nav-barUl{
     width: 100%;
@@ -56,6 +58,7 @@ body{
 }
 /* main  */
 main{
+    position: relative;
     width: 70%;
     margin: auto;
 }
@@ -92,6 +95,9 @@ main{
     width:  100% !important;
     /* border: 1px solid red; */
 }
+.heading{
+    display: none;
+}
 /* paragraph  */
 .paragraph-container{
     width: 95%;
@@ -99,23 +105,33 @@ main{
     padding: 0;
     text-align: justify;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: normal;
     word-spacing: .5px;
 }
 
 /* \\ container-2 in the main  */
-.container2, .container3{
+.container2, .container3, .container4{
     width: 85%;
     background-color:transparent;
     height: 50%;
     margin: auto;
     /* margin-top: .5rem; */
     padding: .5rem;
+    font-size: 1rem;
     /* border: 3px solid #dda059; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+/* heading in container4  */
+.heading-container{
+    background-color: #dda059;
+    text-align: center;
+    border-radius: 2rem;
+}
+.heading-container h1{
+    color: #6b3710;
 }
 .image-container{
     /* width: 95%; */
@@ -165,7 +181,7 @@ main{
         width: 100%;
         margin: 0;
     }
-    .container2, .container3{
+    .container2, .container3, .container4{
         width: 95%;
         background-color:transparent;
         /* height: 400px; */
@@ -177,13 +193,22 @@ main{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .heading{
+        display: none;
+    }
+    .heading-container{
+        width: 100%;
+        border-radius:0;
+        padding: 0;
+        margin: 0;
+    }
     .paragraph-container{
         width: 95%;
         margin-top: .5rem;
         padding: 0;
         text-align:juti;
         color: black;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: normal;
         word-spacing: .1px;
         display: flex;
@@ -199,7 +224,7 @@ main{
 
 }
 @media(max-width:765px){
-    .container2, .container3{
+    .container2, .container3, .container4{
         width: 100%;
         height: auto;
         /* margin-top: .1rem; */
@@ -207,19 +232,44 @@ main{
         /* padding-bottom: .1rem; */
         display: flex;
         flex-wrap: wrap;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .container2 .image-container img{
+        width: 98%;
+        height: auto;
+    }
+    .container1, .container2, .container3 .paragraph-container{
+        width: 98%;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin: auto;
+        margin-bottom: 0;
+        padding-bottom:0;
+    }
+    .container1 .paragrap-container {
+        margin-top: .5rem;
+        margin-bottom: 0px;
     }
     .image-container{
-        width: 100%;
+        width: 98%;
         height: auto;
         padding: 0;
-        padding-top: .5rem;
+        /* padding-top: .5rem; */
     }
     .image-container img{
         width: 100%;
         height: auto;
     }
-    .paragrap-container{
+    .heading{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #6b3710;
+    }
+    .paragraph-container{
         padding: 0;
+        width: 100%;
         /* height: 40%; */
     }
 }
