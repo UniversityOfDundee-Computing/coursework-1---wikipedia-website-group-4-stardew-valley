@@ -1,66 +1,64 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: 'stardew_valleyregular';
-    src: url('stardew_valley-webfont.woff2') format('woff2'),
-         url('stardew_valley-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-body {
+body{
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: fixed;
+    background-size: cover;
     background-attachment: fixed;
+    
+
+}
+.headerImg-container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    /* position:fixed; */
+}
+.headerImg-container img{
+    width: 24%;
+    height: auto;
+
 }
 
-#nav-bar {
-    width: 80%;
+#nav-bar{
+    width: 70%;
     margin: auto;
     background-color: #dda059;
     border-radius: 20px;
     position: sticky;
 }
-
-
-
-
-
-#nav-barUl {
+#nav-barUl{
     width: 100%;
     display: flex;
     background-color: #dda059;
-    border-radius: 10px;
+    border-radius:10px ;
 }
 
-.nav-item {
+.nav-item{
     background-color: #6b3710;
-    width: 50%;
+    width: 24%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 1rem;
-    font-family: 'stardew_valleyregular';
 
 }
-
-.nav-item a {
-    color: #dda059;
+.nav-item a{
+    color:  #dda059;
     border-radius: 1rem;
 }
-
-.nav-item a:hover {
+.nav-item a:hover{
     color: white;
 }
-
-.search-container {
+/* main  */
+main{
+    position: relative;
     width: 70%;
     margin: auto;
 }
@@ -108,7 +106,7 @@ body {
     text-align: justify;
     color: black;
     font-size: 1rem;
-    font-family: stardew;
+    /* font-family: stardew; */
     line-height: normal;
     word-spacing: .5px;
 }
@@ -142,10 +140,7 @@ body {
     display: flex;
     justify-content: center;
 }
-
-.search-container input {
-    color: black;
-    border: none;
+.image-container img{
     width: 100%;
     height: 100%;
 
@@ -175,13 +170,99 @@ body {
     width: 30%;
 }
 
-@media(max-width : 995px) {
-    #nav-bar {
-        width: 100%;
-        border-radius: 0px;
-    }
 
-    .search-container {
+
+@media(max-width : 1000px){
+    .headerImg-container{
+        display: none;
+
+    }
+    #nav-bar{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        border-radius:0px ;
+        position: fixed;
+        z-index: 1;
+
+    
+    }
+    /* .navbar-toggleer */
+    .nav-item{
+        width: 98%;
+        border-radius: 0;
+        margin: auto;
+        margin-top: .2rem;
+    }
+    main{
+        width:100%;
+        padding-top:3.5rem ;
+    }
+    .container1{
+        width: 100%;
+        border: none;
+        /* padding-top: 4rem; */
+    }
+    .container1 .paragraph-container{
+        width: 95%;
+    }
+    .carousel-container{
+        width: 95%;
+        height: auto;
+        /* z-index: -1; */
+        /* background-color: red; */
+    }
+    .carousel-inner{
+        /* width: 70%; */
+        height:auto;
+        margin: 0;
+    }
+    .carousel{
+        width: 100%;
+        margin: 0;
+    }
+    .container2, .container3, .container4{
+        width: 95%;
+        background-color:transparent;
+        /* height: 400px; */
+        margin: auto;
+        margin-top: .5rem;
+        padding: .5rem;
+        /* border: 3px solid #dda059; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .heading{
+        display: none;
+    }
+    .heading-container{
+        width: 100%;
+        border-radius:0;
+        padding: 0;
+        margin: 0;
+    }
+     .paragraph-container{
+        width: 95%;
+        margin-top: .5rem;
+        padding: 0;
+        text-align:justify;
+        color: black;
+        font-size: 1rem;
+        line-height: normal;
+        word-spacing: .1px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image-container{
+        width: 100%;
+        /* height: 50%; */
+        padding: 0;
+    }
+    .footer-container{
+        width: 98%;
+    }
+    .team-logo-container{
         display: none;
     }
 
@@ -237,120 +318,4 @@ body {
         width: 100%;
         /* height: 40%; */
     }
-}
-
-.tg {
-    border-collapse: collapse;
-    margin: auto;
-
-}
-
-.tg td {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-}
-
-.tg th {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-    vertical-align: middle;
-}
-
-.tg .tg-baqh {
-    background-color: #F8F9FA;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg .tg-0lax {
-    background-color: #F8F9FA;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg .tg-nom1 {
-    background-color: #ffe3e3;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg .tg-suc3 {
-    background-color: #9EFF9E;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg {
-    border-collapse: collapse;
-    margin: auto;
-
-}
-
-.tg td {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-}
-
-.tg th {
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    overflow: hidden;
-    padding: 10px 5px;
-    word-break: normal;
-    vertical-align: middle;
-}
-
-.tg .tg-baqh {
-    background-color: #F8F9FA;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg .tg-0lax {
-    background-color: #F8F9FA;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg .tg-nom1 {
-    background-color: #ffe3e3;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
-}
-
-.tg .tg-suc3 {
-    background-color: #9EFF9E;
-    color: #202122;
-    text-align: left;
-    vertical-align: middle;
 }
