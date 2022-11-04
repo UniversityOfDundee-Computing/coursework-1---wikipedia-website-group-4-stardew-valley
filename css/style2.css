@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'stardew_valleyregular';
+    src: url('stardew_valley-webfont.woff2') format('woff2'),
+         url('stardew_valley-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
@@ -19,6 +28,10 @@ body {
     border-radius: 20px;
 }
 
+
+
+
+
 #nav-barUl {
     width: 100%;
     display: flex;
@@ -28,11 +41,12 @@ body {
 
 .nav-item {
     background-color: #6b3710;
-    width: 23%;
+    width: 50%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     border-radius: 1rem;
+    font-family: 'stardew_valleyregular';
 
 }
 
