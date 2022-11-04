@@ -26,6 +26,7 @@ body {
     margin: auto;
     background-color: #dda059;
     border-radius: 20px;
+    position: sticky;
 }
 
 
@@ -61,20 +62,117 @@ body {
 
 .search-container {
     width: 70%;
-    height: 30px;
-    background-color: white;
-    margin: 20px auto;
+    margin: auto;
+}
+/* container inside main  */
+.container1{
+    width: 85%;
+    background-color:transparent;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+    padding-top: .5rem;
+    /* border: 3px solid #dda059; */
     display: flex;
-    color: black;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* container inside container1  */
+.carousel-container{
+    width: 95%;
+    height: auto;
+    /* background-color: red; */
+}
+.carousel-inner{
+    height:auto;
+    margin: auto;
+}
+.carousel{
+    width: 100%;
+    margin: auto;
+}
 
+.carousel-item img{
+    height: 100% !important;
+    width:  100% !important;
+    /* border: 1px solid red; */
+}
+.heading{
+    display: none;
+}
+/* paragraph  */
+.paragraph-container{
+    width: 95%;
+    margin-top: .5rem;
+    padding: 0;
+    text-align: justify;
+    color: black;
+    font-size: 1rem;
+    font-family: stardew;
+    line-height: normal;
+    word-spacing: .5px;
+}
+
+/* \\ container-2 in the main  */
+.container2, .container3, .container4{
+    width: 85%;
+    background-color:transparent;
+    /* height: 50%; */
+    margin: auto;
+    /* margin-top: .5rem; */
+    padding: .5rem;
+    font-size: 1rem;
+    /* border: 3px solid #dda059; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* heading in container4  */
+.heading-container{
+    background-color: #ffffcc;
+    text-align: center;
+    border-radius: .5rem;
+}
+.heading-container h1{
+    color: #6b3710;
+}
+.image-container{
+    /* width: 95%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .search-container input {
     color: black;
     border: none;
     width: 100%;
-    height: 30px;
+    height: 100%;
+
+}
+.paragrap-container{
+    height:auto;
+    
+}
+.footer-container{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    background-color: #fae791;
     text-align: center;
+    color: #6b3710;
+    
+}
+.cp-text{ 
+    color: rgba(0,0,0,.7);
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
+.team-logo-container h4{
+    padding: 0;
+
+}
+.team-logo-container img{
+    width: 30%;
 }
 
 @media(max-width : 995px) {
@@ -87,6 +185,116 @@ body {
         display: none;
     }
 
+
+
+}
+@media(max-width:765px){
+    .container2, .container3, .container4{
+        width: 100%;
+        height: auto;
+        /* margin-top: .1rem; */
+        /* padding-top:.1rem; */
+        /* padding-bottom: .1rem; */
+        display: flex;
+        flex-wrap: wrap;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .container2 .image-container img{
+        width: 98%;
+        height: auto;
+    }
+    .container1, .container2, .container3 .paragraph-container{
+        width: 98%;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin: auto;
+        margin-bottom: 0;
+        padding-bottom:0;
+    }
+    .container1 .paragrap-container {
+        margin-top: .5rem;
+        margin-bottom: 0px;
+    }
+    .image-container{
+        width: 98%;
+        height: auto;
+        padding: 0;
+        /* padding-top: .5rem; */
+    }
+    .image-container img{
+        width: 100%;
+        height: auto;
+    }
+    .heading{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #6b3710;
+    }
+    .paragraph-container{
+        padding: 0;
+        width: 100%;
+        /* height: 40%; */
+    }
+}
+
+.tg {
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    vertical-align: middle;
+}
+
+.tg .tg-baqh {
+    background-color: #F8F9FA;
+    color: #202122;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tg .tg-0lax {
+    background-color: #F8F9FA;
+    color: #202122;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tg .tg-nom1 {
+    background-color: #ffe3e3;
+    color: #202122;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tg .tg-suc3 {
+    background-color: #9EFF9E;
+    color: #202122;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .tg {
